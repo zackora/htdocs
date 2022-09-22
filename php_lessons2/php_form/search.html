@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>検索</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div id="inquiry">
+            <h1>検索画面</h1>
+            <p>コードを入力してください（半角数字）</p>
+            <form id="search" action="search_record.php" method="post">
+                <select id="code" name="code">
+                    <option value="" selected="selected">コードを選択してください</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+                <br>
+                <input type="submit" value="検索">
+            </form>
+            <ul>
+                <li><a href="menu.html">メニューに戻る</a></li>
+            </ul>
+        </div><!-- id="inquiry" -->
+    </body>
+</html>
