@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>特別ディナーショ－　ご予約受付ページ</title>
+    </head>
+    <body>
+        特別ディナーショ－　ご予約受付ページ
+        <br><br>
+        <form action="test.php" method="post">
+            <table>
+                <tr>
+                    <td bgcolor="#dcf0f0">名前：</td>
+                    <td><input type="text" name="namae" size="30" maxlength="30"></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#dcf0f0">電話番号：</td>
+                    <td><input type="text" name="denwa" size="30" maxlength="30"></td>
+                </tr>
+                <tr>
+                    <td bgcolor="#dcf0f0">予約日時：</td>
+                    <td>
+                        <select name="monthDay">
+                            <option value="12/24">12/24
+                            <option value="12/25" selected>12/25
+                        </select>
+                        <select name="time">
+                            <option value="18:00～" selected>18:00～
+                            <option value="20:00～">20:00～
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor="#dcf0f0">席のご希望：</td>
+                    <td>
+                        <input type="radio" name="seki" value="禁煙席">禁煙席
+                        <input type="radio" name="seki" value="喫煙席" checked>喫煙席
+                    </td>
+                </tr>
+                <tr>
+                    <td bgcolor="#dcf0f0">当店をお知りになった<br>きっかけ：（複数回答可）</td>
+                    <td>
+                        <input type="checkbox" name="toten[]" value="当店のWebサイト">当店のWebサイト
+                        <input type="checkbox" name="toten[]" value="検索サイト">検索サイト
+                        <input type="checkbox" name="toten[]" value="雑誌">雑誌<br>
+                        <input type="checkbox" name="toten[]" value="知人からの紹介">知人からの紹介
+                        <input type="checkbox" name="toten[]" value="その他" checked>その他
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="hidden" name="mode" value="123">
+                    </td>
+                    <td>
+                        <input type="submit" value="予約する">
+                        <input type="reset" value="入力しなおす">
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
