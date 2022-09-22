@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+/* form img {
+    width: 100px;
+    height: 300px;
+} */
+
+body.sanbu {
+    background-image: url("images/sanbu_back.jpg");
+}
+
+.sentakushi {
+    float: inherit;
+}
+
+.sentakushi a:hover {
+    opacity: 0.7;
+}
+
+img.gazou {
+    display: flex;
+    float: left;
+    margin: 10px;
+    max-height: 500px;
+    max-width: 400px;
+    min-height: 400px;
+    min-width: 300px;
+}
+
+input {
+    width: 200px;
+    height: 100px;
+    border-radius: 0.5;
+    font-size: 30px;
+    text-align: center;
+}

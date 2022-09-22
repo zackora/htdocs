@@ -1,0 +1,25 @@
+@charset "UTF-8";
+.fadein-before{
+    /*透過度の設定。0で表示されなくなる。*/
+    opacity: 0;
+    /*要素を左に100pxずらしたところに配置する*/
+    transform:translateX(-100px);
+    /*透過度と表示位置を1秒かけて変化させる*/
+    transition:opacity 1s,transform 1s;
+}
+
+.fadein-after{
+    /*透過度の設定。非表示から表示にする。*/
+    opacity: 1;
+    /*要素を100px左にしていたのを元の位置に戻す*/
+    transform: translate(0);
+}
+
+.gameover {
+    position: relative;
+    text-align: center;
+}
+
+/* body {
+    background-color: purple;
+} */
